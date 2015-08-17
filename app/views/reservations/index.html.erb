@@ -1,0 +1,15 @@
+<h1>Reservation options</h1>
+<p>Selec necessary options</p>
+<form>
+<% @reservation = Reservation.new %>
+  <%= simple_form_for(@reservation, :url => new_reservation_path(@reservation)) do |f| %>
+    <div class="form-group">
+      <%= f.input :start_date, as: :date, start_year: Date.today.year %>
+      <%= f.input :end_date, as: :date, start_year: Date.today.year %>
+      <%= f.input :room_type %>
+      <%= f.association :user %>
+      <%= f.association :room %>
+    </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+<% end %>
