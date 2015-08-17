@@ -1,0 +1,12 @@
+<h1>Reservation options</h1>
+<p>Selec necessary options</p>
+<form>
+  <%= simple_form_for(:reservation, :url => new_reservation_path) do |f| %>
+    <div class="form-group">
+      <%= f.input :start_date, as: :date, start_year: Date.today.year %>
+      <%= f.input :end_date, as: :date, start_year: Date.today.year %>
+      <%= f.input :room_type, collection: Room.select(:size).distinct.decorate, label_method: :display_size %>
+    </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+<% end %>
