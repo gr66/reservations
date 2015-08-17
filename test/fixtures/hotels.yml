@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: First
+  stars: 3
+
+two:
+  name: Second
+  stars: 4
+
+three:
+  name: third
+  stars: 4
