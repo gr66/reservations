@@ -1,0 +1,36 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 1
+  size: 1
+  hotel_id: 980190962
+
+two:
+  number: 2
+  size: 1
+  hotel_id: 980190962
+
+three:
+  number: 3
+  size: 1
+  hotel_id: 980190962
+
+for:
+  number: 1
+  size: 2
+  hotel_id: 298486374
+
+five:
+  number: 2
+  size: 3
+  hotel_id: 298486374
+
+six:
+  number: 3
+  size: 2
+  hotel_id: 298486374
+
+seven:
+  number: 1
+  size: 3
+  hotel_id:
